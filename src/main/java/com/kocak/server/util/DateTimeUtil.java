@@ -1,4 +1,4 @@
-package com.kocak.portfolio.util;
+package com.kocak.server.util;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;

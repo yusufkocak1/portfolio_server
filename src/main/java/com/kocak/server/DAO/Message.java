@@ -1,12 +1,20 @@
-package com.kocak.portfolio.DAO;
+package com.kocak.server.DAO;
 
-import com.kocak.portfolio.dto.MessageDTO;
-import com.kocak.portfolio.util.DateTimeUtil;
+import com.kocak.server.dto.MessageDTO;
+import com.kocak.server.util.DateTimeUtil;
 
-//@Entity
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.Date;
+
+@Entity
 public class Message {
-  //  @Id
-   // @GeneratedValue(strategy = GenerationType.AUTO)
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
     private long fromID;
     private long toID;

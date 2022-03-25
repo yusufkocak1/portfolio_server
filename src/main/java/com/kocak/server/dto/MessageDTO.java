@@ -1,4 +1,4 @@
-package com.kocak.portfolio.dto;
+package com.kocak.server.dto;
 
 import java.io.Serializable;
 

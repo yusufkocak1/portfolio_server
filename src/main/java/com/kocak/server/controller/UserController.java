@@ -1,6 +1,6 @@
-package com.kocak.portfolio.controller;
+package com.kocak.server.controller;
 
-import com.kocak.portfolio.dto.UserLoginDTO;
+import com.kocak.server.dto.UserLoginDTO;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
