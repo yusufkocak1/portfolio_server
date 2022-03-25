@@ -17,7 +17,6 @@ public class MessengerController {
 
     @RequestMapping(path = "/sendMessage", method = RequestMethod.POST)
     public String sendMessages(@RequestBody MessageDTO message){
-
         return  messageService.saveMessage(message);
     }
     @RequestMapping(path = "/getMessage", method = RequestMethod.POST)
