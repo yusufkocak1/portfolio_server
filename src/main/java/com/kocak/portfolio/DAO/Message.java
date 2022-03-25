@@ -3,18 +3,10 @@ package com.kocak.portfolio.DAO;
 import com.kocak.portfolio.dto.MessageDTO;
 import com.kocak.portfolio.util.DateTimeUtil;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
-import java.util.Date;
-
-@Entity
+//@Entity
 public class Message {
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+  //  @Id
+   // @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
     private long fromID;
     private long toID;

@@ -12,17 +12,15 @@ import java.util.List;
 @Service
 public class MessageService {
 
-@Autowired
-MessageRepository messageRepository;
 
     public String saveMessage(MessageDTO messageDTO) {
         Message message = new Message();
         message.fill(messageDTO);
-        return messageRepository.save(message).toString();
+        return "";//messageRepository.save(message).toString();
     }
     public List<Message> getMessage(MessageDTO messageDTO) {
-        List<Message> message = messageRepository.findByFromIDAndToID(messageDTO.getFromID(),messageDTO.getToID());
-        return message;
+       // List<Message> message = messageRepository.findByFromIDAndToID(messageDTO.getFromID(),messageDTO.getToID());
+        return null;
     }
 }
 
